@@ -1,4 +1,4 @@
-// UVA10182 - Bee Maja.cpp
+// UVa-10182: Bee Maja.cpp
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -21,8 +21,8 @@ int main(void)
   			last+=6*l;
 		}
 		
-		int s=(last-6*l)+1;  	// s: start point of this level
-		int nowX=l-1, nowY=1;	// x and y of current point (start point here)
+		int s=(last-6*l)+1;  		// s: start point of this level
+		int nowX=l-1, nowY=1;		// x and y of current point (start point here)
 		int index=s;			// search this level starting from the start point
 		
 		// simulate on level l
