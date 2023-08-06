@@ -1,4 +1,4 @@
-// Bee Maja.cpp
+// UVA10182 - Bee Maja.cpp
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -27,29 +27,29 @@ int main(void)
 		
 		// simulate on level l
 		int i;
-		for(i=0; i<l-1 && index<w; i++, index++)  // ©¹¥ª¤U²¾°Êl-1¨B 
+		for(i=0; i<l-1 && index<w; i++, index++)  // å¾€å·¦ä¸‹ç§»å‹•l-1æ­¥ 
 		{
 			nowX--;
 			nowY++;
 		}
-		for(i=0; i<l && index<w; i++, index++)    // ©¹¥ª¤W²¾°Êl¨B 
+		for(i=0; i<l && index<w; i++, index++)    // å¾€å·¦ä¸Šç§»å‹•læ­¥ 
 		{
 			nowX--;
 		}
-		for(i=0; i<l && index<w; i++, index++)    // ©¹¤W²¾°Êl¨B  
+		for(i=0; i<l && index<w; i++, index++)    // å¾€ä¸Šç§»å‹•læ­¥  
 		{
 			nowY--;
 		}
-		for(i=0; i<l && index<w; i++, index++)    // ©¹¥k¤W²¾°Êl¨B  
+		for(i=0; i<l && index<w; i++, index++)    // å¾€å³ä¸Šç§»å‹•læ­¥  
 		{
 			nowX++;
 			nowY--;
 		}
-		for(i=0; i<l && index<w; i++, index++)    // ©¹¥k¤U²¾°Êl¨B  
+		for(i=0; i<l && index<w; i++, index++)    // å¾€å³ä¸‹ç§»å‹•læ­¥  
 		{
 			nowX++;
 		}
-		for(i=0; i<l && index<w; i++, index++)    // ©¹¤U²¾°Êl¨B  
+		for(i=0; i<l && index<w; i++, index++)    // å¾€ä¸‹ç§»å‹•læ­¥  
 		{
 			nowY++;
 		}
