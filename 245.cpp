@@ -4,7 +4,8 @@
 #include <cstring>
 using namespace std;
 
-class word                  // class word
+// class word
+class word                  
 {
 	public:
 		string s;           // s: an existed word
@@ -17,13 +18,13 @@ class word                  // class word
 		}
 };
 
-int is_number(char ch)      // whether the input is a number
+int is_number(char ch)      	    // whether the input is a number
 {
 	if(ch>='0' && ch<='9') return 1;
 	else return 0;
 }
 
-int is_alphabet(char ch)    // whether the input is an alphabet (word)
+int is_alphabet(char ch)    	    // whether the input is an alphabet (word)
 {
 	if((ch>='a'&& ch<='z') || (ch>='A'&& ch<='Z')) return 1;
 	else return 0;
@@ -32,12 +33,12 @@ int is_alphabet(char ch)    // whether the input is an alphabet (word)
 int main(void)
 {
 	char ch;
-	word *head;             // head: the start of a list storing existed words
+	word *head;                 		   // head: the start of a list storing existed words
 	
-	ch=getchar();           // use getchar() so that a blanck can be read
-	while(ch!='0')          // until the end 
+	ch=getchar();               		   // use getchar() so that a blanck can be read
+	while(ch!='0')              		   // until the end 
 	{
-		if(is_number(ch))   // deal with a number
+		if(is_number(ch))   	   	   // deal with a number
 		{
 			int num=0;
 			while(is_number(ch))       // convert to a decimal number of the list
@@ -64,7 +65,7 @@ int main(void)
 			}
 		}
 		
-		else if(is_alphabet(ch))       // deal with an alphabet (word)
+		else if(is_alphabet(ch))       	   // deal with an alphabet (word)
 		{
 			string tmp;
 			while(is_alphabet(ch))     // get the full word
@@ -80,9 +81,9 @@ int main(void)
 			head=n;
 		}
 		
-		else                           // deal with other symbols
+		else                           	   // deal with other symbols
 		{
-			cout << ch;				   // print out the symbol directly
+			cout << ch;		   // print out the symbol directly
 			ch=getchar();
 		}
 	}
