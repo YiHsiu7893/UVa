@@ -27,7 +27,7 @@ int dz[6]={0, 0, 0, 0, 1, -1};
 
 int BFS(int l, int r, int c, cube s)           	   // BFS search
 {
-	bool visited[31][31][31]={0};              //  whether the cube has visited
+	bool visited[31][31][31]={0};              // whether the cube has visited
 	visited[s.x][s.y][s.z]=1;
 	
 	queue<cube> q;                             // use queue to implement BFS serach
