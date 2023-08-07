@@ -7,8 +7,8 @@ using namespace std;
 class cube
 {
   public:
-  	int x, y, z;          // coordinate
-  	int t;                // time
+  	int x, y, z;          			   // coordinate
+  	int t;                			   // time
   	
   	void set(int a, int b, int c, int d)       // set coordinate and time
   	{
@@ -19,13 +19,13 @@ class cube
 	}
 };
 
-char dungeon[31][31][31];                      // dungeon: store the symbols
+char dungeon[31][31][31];                          // dungeon: store the symbols
 // 6 valid movement direction
 int dx[6]={1, -1, 0, 0, 0, 0};
 int dy[6]={0, 0, 1, -1, 0, 0};
 int dz[6]={0, 0, 0, 0, 1, -1};
 
-int BFS(int l, int r, int c, cube s)           // BFS search
+int BFS(int l, int r, int c, cube s)           	   // BFS search
 {
 	bool visited[31][31][31]={0};              //  whether the cube has visited
 	visited[s.x][s.y][s.z]=1;
@@ -41,7 +41,7 @@ int BFS(int l, int r, int c, cube s)           // BFS search
 		q.pop();
 		if(dungeon[current.x][current.y][current.z]=='E') return current.t;
 		
-		for(int i=0; i<6; i++)                 // search through each direction
+		for(int i=0; i<6; i++)             // search through each direction
 		{
 			nextX=current.x+dx[i];
 			nextY=current.y+dy[i];
@@ -58,7 +58,7 @@ int BFS(int l, int r, int c, cube s)           // BFS search
 			}
 		}
 	}
-	return -1;                                  // cannot reach E
+	return -1;                                 // cannot reach E
 }
 
 int main(void)
@@ -67,9 +67,10 @@ int main(void)
 	cube S;
 	
 	cin >> L >> R >> C;
-	while(L || R || C)                   		// (L, R, C) != (0, 0, 0)
+	while(L || R || C)                   	   // (L, R, C) != (0, 0, 0)
 	{
-		for(int i=1; i<=L; i++)           		// build the dungeon
+		// build the dungeon
+		for(int i=1; i<=L; i++)           		
 		{
 			for(int j=1; j<=R; j++)
 				for(int k=1; k<=C; k++)
@@ -79,11 +80,11 @@ int main(void)
 				}
 		}
 		
-		int x=BFS(L, R, C, S);                  // do BFS search
+		int x=BFS(L, R, C, S);             // do BFS search
 		if(x==-1) cout << "Trapped!" << endl;
 		else cout << "Escaped in " << x << " minute(s)." << endl;
 		
-		cin >> L >> R >> C;                     // next dungeon
+		cin >> L >> R >> C;                // next dungeon
 	}
 
 	return 0;
