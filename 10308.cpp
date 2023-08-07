@@ -19,29 +19,29 @@ void collect(int v1, int v2, int d)     // collecting data
 {
 	adj tmp;
 	
-	tmp.first=v2;                       // collect (v2, d) to v1
+	tmp.first=v2;                   // collect (v2, d) to v1
 	tmp.second=d;
 	data[v1].push_back(tmp);
 	
-	tmp.first=v1;                       // collect (v1, d) to v2
+	tmp.first=v1;                   // collect (v1, d) to v2
 	tmp.second=d;
 	data[v2].push_back(tmp);
 }
 
-void dfs(int r)                         // depth-first search
+void dfs(int r)                         	    // depth-first search
 {
 	visited[r]=1;
 	int size=data[r].size();            
 	int v, d;
 	
-	dp[r][0]=dp[r][1]=0;                // initialize dp
-	for(int i=0; i<size; i++)           // search through each connected villages
+	dp[r][0]=dp[r][1]=0;                	    // initialize dp
+	for(int i=0; i<size; i++)              	    // search through each connected villages
 	{
 		adj tmp=data[r][i];
 		v=tmp.first;
 		d=tmp.second;
 		
-		if(!visited[v])                 // only when the village hasn't been visited that the data need to be update
+		if(!visited[v])                     // only when the village hasn't been visited that the data need to be update
 		{
 			dfs(v);
 			if(dp[v][1]+d > dp[r][1])   // update the deepest distance
@@ -66,12 +66,12 @@ int main(void)
 	getline(cin, input);
 	while(!input.empty())                                 // second time of a blanck line -> eof
 	{
-		while(!input.empty())                             // first time of a blanck line -> end of a case
+		while(!input.empty())                         // first time of a blanck line -> end of a case
 		{
 			stringstream ss;
 			ss << input;
 			ss >> v1 >> v2 >> d;
-			collect(v1, v2, d);                           // a piece of data
+			collect(v1, v2, d);                       // a piece of data
 			getline(cin, input);
 		}
 		dfs(1);
