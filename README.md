@@ -8,3 +8,4 @@
 - 10182: Bee Maja --> simulation
 - 10308: Roads in the North --> depth-first search
 - 10409: Die Game --> simulaiton
+- 10664: Luggage --> DP, subset sum
