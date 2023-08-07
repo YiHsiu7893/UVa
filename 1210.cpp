@@ -2,8 +2,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <queue>
-#include <cmath>    			  // sqrt()
-#include <cstring>  			  // memset()
+#include <cmath>    			  	  // sqrt()
+#include <cstring>  			  	  // memset()
 using namespace std;
 
 int main(void)
@@ -18,7 +18,7 @@ int main(void)
 		for(j=2; i*j<=10000; j++) is_prime[i*j]=0;
 	
 	// calculate presentations
-	int count[10001];    		  // number of presentations
+	int count[10001];    		  	  // number of presentations
 	memset(count, 0, sizeof(count));
 	
 	queue<int> pre;   			  // numbers that are made up of the previous consecutive prime
@@ -26,7 +26,7 @@ int main(void)
 	{
 		if(is_prime[i])
 		{
-			int size=pre.size();  // there are "size" numbers made up of the previous consecutive prime
+			int size=pre.size();  	  // there are "size" numbers made up of the previous consecutive prime
 			
 			count[i]++;  		  // prime itself contributes to one presentation
 			pre.push(i);
@@ -37,7 +37,7 @@ int main(void)
 				num=pre.front();
 				pre.pop();
 				
-				newnum=num+i;  	   // previous consecutive sequence + current number
+				newnum=num+i;  	  // previous consecutive sequence + current number
 				if(newnum>10000) continue;
 				count[newnum]++;
 				pre.push(newnum);
