@@ -71,7 +71,7 @@ int main(void)
 			stringstream ss;
 			ss << input;
 			ss >> v1 >> v2 >> d;
-			collect(v1, v2, d);                       // a piece of data
+			collect(v1, v2, d);                   // a piece of data
 			getline(cin, input);
 		}
 		dfs(1);
