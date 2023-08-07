@@ -6,7 +6,7 @@
 #include <algorithm>     		  // for using "sort()"
 using namespace std;
 
-typedef pair<int, int> line;      // line <start, end>
+typedef pair<int, int> line;      	  // line <start, end>
 
 bool compare(line l1, line l2)
 {
@@ -16,10 +16,10 @@ bool compare(line l1, line l2)
 
 int main(void)
 {
-	int c;                        // c test cases
+	int c;                            // c test cases
 	cin >> c;
 	
-	for(int i=0; i<c; i++)        // for each test case
+	for(int i=0; i<c; i++)            // for each test case
 	{
 		int t;                    // terminal point
 		cin >> t;
@@ -52,13 +52,13 @@ int main(void)
 				j++;
 			}
 			
-			if(next==-1) break;                       // no larger line segment
+			if(next==-1) break;                   // no larger line segment
 			
-			ans.push_back(lines[next]);               // add next chosen line to ans
+			ans.push_back(lines[next]);           // add next chosen line to ans
 			
-			if(right>=t) break;                       // answer has found
+			if(right>=t) break;                   // answer has found
 			
-			left=right;                               // answer hasn't found, continue searching
+			left=right;                           // answer hasn't found, continue searching
 			j--;
 		}
 		
