@@ -5,6 +5,7 @@
 - 245: Uncompress --> linked list
 - 532: Dungeon Master --> breadth-first search
 - 793: Network Connections --> disjoint set
+- 1210: Sum of Consecutive Prime Numbers -->
 - 10000: Longest Paths --> SPFA
 - 10020: Minimal coverage --> greedy method
 - 10125: Sumsets --> brutal force
