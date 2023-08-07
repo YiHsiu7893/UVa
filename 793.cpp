@@ -6,14 +6,14 @@ using namespace std;
 
 int main(void)
 {
-	int d;        			 // d: the number of dataset
+	int d;        			 		 // d: the number of dataset
 	cin >> d;
 	
-	int c;               	 // c: the number of computers
-	for(int i=0; i<d; i++)   // for each dataset
+	int c;               	 			 // c: the number of computers
+	for(int i=0; i<d; i++)   			 // for each dataset
 	{
 		cin >> c;
-		getchar();			 // skip '\n'
+		getchar();			 	 // skip '\n'
 		
 		int set[c+1];                         	 // seperate computers into different sets
 		for(int k=1; k<=c; k++) set[k]=k;     	 // initialize set, computer k is in set k
@@ -31,7 +31,7 @@ int main(void)
 			ss << input;
 			ss >> type >> cpI >> cpJ;
 			
-			if(type=='c')                     	 // type=='c'
+			if(type=='c')                    // type=='c'
 			{
 				if(set[cpI]!=set[cpJ])
 				{
@@ -44,7 +44,7 @@ int main(void)
 				}
           	
 			}
-			else                             	 // type=='q'
+			else                             // type=='q'
 			{
 				if(set[cpI]==set[cpJ]) N1++;
 				else N2++;
