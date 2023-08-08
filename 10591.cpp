@@ -22,7 +22,7 @@ int main(void)
 	int c;
 	cin >> c;
 	
-	for(int p=1; p<=c; p++)  // for each case
+	for(int p=1; p<=c; p++)  		// for each case
 	{
 		int num;
 		bool isHappy;
@@ -36,13 +36,13 @@ int main(void)
 		{
 			num=squareSum(num);
 			
-			if(num==1)  // a happy number
+			if(num==1)  		// a happy number
 			{
 				isHappy=true;
 				break;
 			}
 		
-			if(exist.count(num))  // an unhappy number
+			if(exist.count(num))  	// an unhappy number
 			{
 				isHappy=false;
 				break;
