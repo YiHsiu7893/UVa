@@ -80,7 +80,7 @@ int main(void)
 					nowX--;
 				}
 			}
-			l--; 					// ´î±¼¨C¼hfor°j°éªºl++ 
+			l--; 					// 減掉每層for迴圈的l++ 
 			
 			cout << 2*l+1 << endl;   		// the side length of l level is 2l+1		
 		}
