@@ -9,7 +9,7 @@ int main(void)
 	cin >> T;
 	
 	int M, N, Q;
-	for(int i=0; i<T; i++)   		 // for each case
+	for(int i=0; i<T; i++)   		 		 // for each case
 	{
 		cin >> M >> N >> Q;
 		printf("%d %d %d\n", M, N, Q);
@@ -21,7 +21,7 @@ int main(void)
 				cin >> grid[j][k];
 			
 		int r, c;	
-		for(int j=0; j<Q; j++)  	 // for each center
+		for(int j=0; j<Q; j++)  	 		 // for each center
 		{
 			cin >> r >> c;
 			int nowX=r, nowY=c;
@@ -80,9 +80,9 @@ int main(void)
 					nowX--;
 				}
 			}
-			l--; 					 // ��C�hfor�j�骺l++ 
+			l--; 					// ´î±¼¨C¼hfor°j°éªºl++ 
 			
-			cout << 2*l+1 << endl;   // the side length of l level is 2l+1		
+			cout << 2*l+1 << endl;   		// the side length of l level is 2l+1		
 		}
 	}
 	
