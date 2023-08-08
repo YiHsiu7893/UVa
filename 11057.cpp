@@ -12,7 +12,7 @@ int main(void)
 		int cost[N];  		 // cost: store the cost of each book
 		for(int i=0; i<N; i++)
 			cin >> cost[i];	
-		sort(cost, cost+N);  // reorder the books by their costs
+		sort(cost, cost+N);  	 // reorder the books by their costs
 		
 		int M;
 		cin >> M;
