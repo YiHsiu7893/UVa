@@ -17,3 +17,4 @@
 - 10591: Happy Number --> number theory
 - 10664: Luggage --> DP, subset sum
 - 10908: Largest Square
+- 11057: Exact Sum
