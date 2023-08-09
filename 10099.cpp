@@ -1,7 +1,7 @@
 // UVa-10099: The Tourist Guide.cpp
 #include <iostream>
 #include <cstdlib>
-#include <cstring>  // memset()
+#include <cstring>  				// memset()
 using namespace std;
 
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
 	{
 		scenario++;
 		
-		int capacity[N+1][N+1];  // the maximal capacity between two cities
+		int capacity[N+1][N+1];  	// the maximal capacity between two cities
 		memset(capacity, 0, sizeof(capacity));
 		
 		int C1, C2, P;
