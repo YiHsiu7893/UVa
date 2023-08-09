@@ -5,13 +5,13 @@ using namespace std;
 
 int gcd(int A, int B, int &X, int &Y)  	// modify X and Y directly, and return D
 {
-	if(A%B==0)  						// B is gcd, so A*0+B*1=B
+	if(A%B==0)  			// B is gcd, so A*0+B*1=B
 	{
 		X=0;
 		Y=1;
 		return B;
 	}
-	else if(B%A==0)						// A is gcd, so A*1+B*0=A
+	else if(B%A==0)			// A is gcd, so A*1+B*0=A
 	{
 		X=1;
 		Y=0;
