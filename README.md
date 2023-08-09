@@ -10,6 +10,7 @@
 - 1210: Sum of Consecutive Prime Numbers
 - 10000: Longest Paths --> SPFA
 - 10020: Minimal coverage --> greedy method
+- 10104: Euclid Problem --> GCD
 - 10125: Sumsets --> brutal force
 - 10182: Bee Maja --> simulation
 - 10209: Is This Integration? --> number theory
