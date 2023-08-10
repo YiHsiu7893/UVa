@@ -4,7 +4,7 @@
 using namespace std;
 #define MAX 30001
 
-long long dp[MAX]={0};    						      // dp[n]: amount of ways that n dollars can be made up
+long long dp[MAX]={0};    						      // dp[n]: number of ways that n dollars can be made up
 int currency[11]={5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000};     // 11 types of currency
 
 int main(void)
